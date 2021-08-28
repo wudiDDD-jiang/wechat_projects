@@ -1,0 +1,118 @@
+/*  主体 110, 180 ,255
+    渐变 227, 240, 252
+    按钮 200, 215 ,255
+*/
+
+*{font-family: "微软雅黑"; }
+QLabel{
+    font-size:16px;
+}
+
+
+/*通用样式*/
+QPushButton{
+    background-color:rgb(200, 215 ,255);
+    border-radius: 6px;
+}
+
+QPushButton#pb_min,QPushButton#pb_close,QPushButton#pb_style
+{
+    border: none;
+    background-color: transparent;
+}
+QPushButton#pb_max
+{
+    font-family:"幼圆";
+    border: none;
+    background-color: transparent;
+}
+QPushButton#pb_min:hover,QPushButton#pb_max:hover, QPushButton#pb_style:hover{
+    padding-top: 2px;
+    border: 1px solid #FFFFFF;
+}
+
+QPushButton#pb_close:hover{
+    padding-top: 2px;
+    background-color: #FF0000;
+}
+
+QLineEdit:hover{
+    border-color:rgb(84, 255, 159);
+    border-right-color:rgb(84, 255, 159);
+    border-left-color:rgb(84, 255, 159);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    font-size:16px;
+}
+
+QLineEdit{
+    border-color: rgb(188, 188, 188 );border-width: 1px;border-style: solid;
+    font-size:16px;
+}
+
+/*主界面样式*/
+QDialog#WeChat{
+    border: 2px solid /*#7AE5C3*/#4A4AFF;
+    border-radius: 2px;
+    background-color: /* #7AE5C3*/rgb(110, 180 ,255);/*#23FFFF*/
+}
+QPushButton#pb_search
+{
+    background-color:transparent;
+    border: 1px solid #FFFFFF;
+}
+QWidget#wdg_page QPushButton {
+    border: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color:transparent;
+    border-radius: 0px;
+}
+
+QWidget#wdg_page QPushButton:hover {
+    border: none;
+    min-width: 90px;
+    background-color:transparent;
+    color:#FFFFFF;
+    border-radius: 0px;
+}
+
+QWidget#wdg_page QPushButton:checked {
+    border-bottom: 2px solid #2254D8;
+    background-color:rgb(227,240,252);/*#99FFFFFF*/
+    border-radius: 0px;
+}
+
+QDialog#WeChat  QWidget#wdg_mid{
+    border-width: 2px;
+    border-style: solid;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:#4A4AFF;
+    border-right-color:#4A4AFF;
+}
+
+
+/*聊天窗口样式*/
+QDialog#ChatDialog{
+    border: 2px solid /*#A5A6A8*/#4A4AFF;
+    border-radius: 2px;
+    background-color: /* #7AE5C3*/rgb(110, 180 ,255); /*#23FFFF*/
+}
+QWidget#wdg_send,QTextEdit,QTextBrowser{
+    border: none;
+    background-color: rgb(227,240,252);
+}
+QWidget#wdg_tools QPushButton:hover
+{
+    border: 1px solid #FFFFFF;
+}
+
+/*房间样式*/
+QDialog#RoomDialog{
+    border: 2px solid /*#A5A6A8*/#4A4AFF;
+    border-radius: 2px;
+    background-color: /* #7AE5C3*/rgb(110, 180 ,255);/*#23FFFF*/
+}
+
